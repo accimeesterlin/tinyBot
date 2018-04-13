@@ -9,7 +9,7 @@ const Landing = () => {
     return (
         <div style={styles.landing}>
 
-            <h2 style={styles.title}>TinyBot</h2>
+            <h2 style={styles.title}>tinyBot</h2>
 
 
             <a href="/dashboard">
@@ -33,6 +33,7 @@ const styles = {
 
     title: {
         fontSize: "45px"
+       
     },
     button: {
         padding: "10px",

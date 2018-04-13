@@ -4,7 +4,7 @@ const exphbs  = require('express-handlebars');
 const consolidate = require("consolidate");
 
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 5000;
 
 
 app.set('view engine', 'handlebars');
@@ -47,5 +47,5 @@ app.get("/home", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("Server is starting at port 9000");
+    console.log("Server is starting at port 5000");
 });
