@@ -2,10 +2,19 @@ const express = require("express");
 const app = express();
 const exphbs  = require('express-handlebars');
 const consolidate = require("consolidate");
+const path = require("path");
+
+// Static Files
+    // HTML
+    // CSS
+    // JavaScript
+    // Images
 
 
 const port = process.env.PORT || 9000;
 
+
+app.use(express.static("public"));
 
 app.set('view engine', 'handlebars');
 app.set('view engine', 'jsx');
@@ -27,6 +36,9 @@ app.engine("jsx", consolidate.react);
 app.get("/", (req, res) => {
     res.render("Landing.jsx"); // .jsx
 });
+
+
+
 
 app.get("/dashboard", (req, res) => {
     res.render("index.handlebars"); // .handlebars

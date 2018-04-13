@@ -1,39 +1,55 @@
 const React = require('react');
 
-// Inline CSS Styling
-
 // Functional Component
 const Landing = () => {
 
     // JSX
     return (
-        <div style={styles.landing}>
-
+        <div style = {styles.landing}>
             <h2 style={styles.title}>TinyBot</h2>
 
-
             <a href="/dashboard">
-                <button style = {styles.button}>Start</button>
+                <img src="/images/logo.jpg" alt="" style = {styles.image}/>
             </a>
         </div>
     );
 };
 
+
+// Heroku 
+// BitBot
+    // link
+
+// Heroku
+// TinyBot
+    // link
+
+
+
+
+// Inline Styling - React
 const styles = {
+
+    image: {
+        width: "200px",
+        height: "200px"
+    },
+
     landing: {
         maxWidth: "360px",
         margin: "100px  auto",
         padding: "20px",
-
         display: " flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        fontSize: "family",
     },
 
     title: {
         fontSize: "45px"
     },
+
     button: {
         padding: "10px",
         borderRadius: "4px",
