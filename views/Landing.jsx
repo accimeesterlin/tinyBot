@@ -5,8 +5,11 @@ const Landing = () => {
 
     // JSX
     return (
-        <div style = {styles.landing}>
-            <h2 style={styles.title}>TinyBot</h2>
+
+        <div style={styles.landing}>
+
+            <h2 style={styles.title}>tinyBot</h2>
+
 
             <a href="/dashboard">
                 <img src="/images/logo.jpg" alt="" style = {styles.image}/>
@@ -48,6 +51,7 @@ const styles = {
 
     title: {
         fontSize: "45px"
+       
     },
 
     button: {

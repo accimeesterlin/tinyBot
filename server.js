@@ -11,7 +11,7 @@ const path = require("path");
     // Images
 
 
-const port = process.env.PORT || 9000;
+const port = process.env.PORT || 5000;
 
 
 app.use(express.static("public"));
@@ -59,5 +59,5 @@ app.get("/home", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("Server is starting at port 9000");
+    console.log("Server is starting at port 5000");
 });
